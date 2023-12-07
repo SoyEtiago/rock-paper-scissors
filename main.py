@@ -1,4 +1,4 @@
-user_option = input('piedra, papel o tijera => ')
+user_option = input('piedra, papel o tijera => ').lower()
 computer_option = 'papel' # Opción fija por el momento
 
 # Validaciones
@@ -7,7 +7,7 @@ if user_option == computer_option :
 elif user_option == 'piedra':
     if computer_option == 'papel':
         print('Papel gana a piedra')
-        print(f'El computador ganó')
+        print('El computador ganó')
     else:
         print('Piedra gana a tijera')
         print('El user ganó!')
@@ -17,11 +17,12 @@ elif user_option == 'papel':
         print('El user ganó!')
     else:
         print('Tijera gana a papel')
-        print(f'El computador ganó')
+        print('El computador ganó')
 elif user_option == 'tijera':
         if computer_option == 'piedra':
             print('Piedra gana a tijera')
-            print(f'El computador ganó')
+            print('El computador ganó')
         else:
             print('Tijera gana a papel')
             print('El user ganó!')
+
